@@ -1,3 +1,26 @@
+# Problem Statement
+### Your Challenge
+
+You are provided with sample 100K raw, transaction-level data from the Aave V2 protocol. Each record corresponds to a wallet interacting with the protocol through actions such as `deposit`, `borrow`, `repay`, `redeemunderlying`, and `liquidationcall`.
+
+Your task is to develop a robust machine learning model that assigns a **credit score between 0 and 1000** to each wallet, based solely on historical transaction behavior. Higher scores indicate reliable and responsible usage; lower scores reflect risky, bot-like, or exploitative behavior.
+
+Decide which features to engineer from DeFi transaction data
+Implement a one-step script that generates wallet scores from a json file which contains the a small sample of user-transactions.
+
+Validate and explain the score logic in a one-page README for transparency and extensibility.
+
+### Link to the user-transactions json file:
+
+The below file is raw json file (~87MB)
+
+https://drive.google.com/file/d/1ISFbAXxadMrt7Zl96rmzzZmEKZnyW7FS/view?usp=sharing
+
+Or if you prefer the compressed zip file (~10MB)
+
+https://drive.google.com/file/d/14ceBCLQ-BTcydDrFJauVA_PKAZ7VtDor/view?usp=sharing
+
+
 # Aave V2 Wallet Credit Scoring System
 ## Overview
 This repository contains a robust machine learning solution for assigning credit scores (0-1000) to Aave V2 protocol wallets based solely on their historical transaction behavior. The system analyzes transaction patterns to identify reliable users versus risky or potentially malicious actors.
